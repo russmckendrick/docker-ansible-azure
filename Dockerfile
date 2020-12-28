@@ -1,13 +1,12 @@
 ### Dockerfile
 #
-#   See https://github.com/russmckendrick/docker
+#   See https://github.com/russmckendrick/docker-ansible-azure/
 
 FROM alpine:latest
 
 LABEL maintainer="Russ McKendrick <russ@mckendrick.io>"
 LABEL org.opencontainers.image.source https://github.com/russmckendrick/docker-ansible-azure/
-LABEL org.opencontainers.image.description "Docker Image which runs Ansible, the Azure Ansible community modules and the Azure CLI"
-LABEL org.opencontainers.image.url https://www.mediaglasses.blog/
+LABEL org.opencontainers.image.description "Docker Image which runs Ansible, the Azure Collection and the Azure CLI, see the repo for more information"
 
 RUN apk update && apk upgrade && \
         apk add bash py3-pip && \
