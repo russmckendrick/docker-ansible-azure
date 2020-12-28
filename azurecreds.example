@@ -1,6 +1,6 @@
 # Example Azure Credentials Files
 
-AZURE_CLIENT_ID=
-AZURE_SECRET=
-AZURE_TENANT=
-AZURE_SUBSCRIPTION_ID=
+AZURE_CLIENT_ID=yourClientId
+AZURE_SECRET=yourClientSecret
+AZURE_TENANT=yourTenantId
+AZURE_SUBSCRIPTION_ID=yourSubscriptionId
