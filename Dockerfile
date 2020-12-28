@@ -5,8 +5,8 @@
 FROM alpine:latest
 
 LABEL maintainer="Russ McKendrick <russ@mckendrick.io>"
-LABEL org.opencontainers.image.source https://github.com/russmckendrick/docker
-LABEL org.opencontainers.image.description "My base image, used for all of my container builds, see this containers GitHub repo for more info"
+LABEL org.opencontainers.image.source https://github.com/russmckendrick/docker-ansible-azure/
+LABEL org.opencontainers.image.description "Docker Image which runs Ansible, the Azure Ansible community modules and the Azure CLI"
 LABEL org.opencontainers.image.url https://www.mediaglasses.blog/
 
 RUN apk update && apk upgrade && \
