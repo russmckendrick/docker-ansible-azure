@@ -11,7 +11,7 @@ LABEL org.opencontainers.image.description "Docker Image which runs Ansible, the
 ENV RELEASEHASH 54ca26cca94c34fb8cdb9f5ff6f45efb24d5ca82
 
 RUN apk update && apk upgrade && \
-        apk add bash py3-pip && \
+        apk add bash py3-pip openssh-client  && \
         apk add --virtual=build gcc libffi-dev musl-dev openssl-dev python3-dev make && \
         pip --no-cache-dir install -U pip && \
         pip install azure-cli && \
