@@ -18,6 +18,7 @@ RUN apk update && apk upgrade && \
         pip install -r https://raw.githubusercontent.com/ansible-collections/azure/${RELEASEHASH}/requirements-azure.txt && \
         pip install ansible && \
         ansible-galaxy collection install azure.azcollection && \
+        ansible-galaxy collection install community.mysql && \
         apk del --purge build && \
         mkdir /playbook
 
