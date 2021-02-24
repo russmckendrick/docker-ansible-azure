@@ -43,3 +43,4 @@ docker run \
     ghcr.io/russmckendrick/ansible:latest \
     az account list
 ```
+
