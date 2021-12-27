@@ -8,7 +8,7 @@ LABEL maintainer="Russ McKendrick <russ@mckendrick.io>"
 LABEL org.opencontainers.image.source https://github.com/russmckendrick/docker-ansible-azure/
 LABEL org.opencontainers.image.description "Docker Image which runs Ansible, the Azure Collection and the Azure CLI, see the repo for more information"
 
-ENV RELEASEHASH 54ca26cca94c34fb8cdb9f5ff6f45efb24d5ca82
+ENV RELEASEHASH dev
 
 RUN apk update && apk upgrade && \
         apk add bash py3-pip openssh-client && \
