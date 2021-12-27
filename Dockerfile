@@ -15,8 +15,8 @@ RUN apk update && apk upgrade && \
         apk add --virtual=build gcc libffi-dev musl-dev openssl-dev python3-dev make && \
         pip --no-cache-dir install -U pip && \
         pip install azure-cli && \
-        pip install -r https://raw.githubusercontent.com/ansible-collections/azure/${RELEASEHASH}/requirements-azure.txt && \
         pip install ansible && \
+        pip install -r https://raw.githubusercontent.com/ansible-collections/azure/${RELEASEHASH}/requirements-azure.txt && \
         ansible-galaxy collection install azure.azcollection && \
         ansible-galaxy collection install community.mysql && \
         apk del --purge build && \
